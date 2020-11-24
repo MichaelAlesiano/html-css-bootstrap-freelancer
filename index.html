@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -15,28 +16,46 @@
     <header>
 
         <!-- Inizio menu principale -->
-        <div id="header_nav">
+        <nav class="navbar navbar-default navbar-fixed-top ms_navbar">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Start Bootstrap</a>
+          </div>
 
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-xs-4"></div>
-                    <div class="col-xs-8"></div>
-                </div>
-
-            </div>
-
-        </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-->
+        </nav>
         <!-- Fine menu principale -->
 
         <!-- Inizio Jumbotron -->
-        <div class="container">
+        <section id="jumbotron" class="ms_green ms_text_white">
+          <div class="container">
+           <div class="row">
+             <div class="col-xs-12 text-center">
+              <img src="img/profile.png" alt="">
+              <h1>Start Bootstrap</h1>
+              <div class="ms_star_for_blue">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Graphic Artist - Web Designer - Illustrator</h3>
+             </div>
+           </div>
 
-            <div class="row">
-                <div class="col-xs-8 col-xs-offset-2"></div>
-            </div>
-
-        </div>
+          </div>
+        </section>
         <!-- Fine Jumbotron -->
 
     </header>
@@ -51,16 +70,35 @@
             <div class="container">
 
                 <div class="row">
-                    <h2>Portfolio</h2>
+                    <div class="col-xs-12 text-center">
+
+                      <h2>Portfolio</h2>
+                      <div class="ms_star_for_white">
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                    </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 col-lg-4"></div>
-                    <div class="col-md-6 col-lg-4"></div>
-                    <div class="col-md-6 col-lg-4"></div>
-                    <div class="col-md-6 col-lg-4"></div>
-                    <div class="col-md-6 col-lg-4"></div>
-                    <div class="col-md-6 col-lg-4"></div>
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                      <img src="img/cabin.png" class="img-responsive img-rounded" alt="Responsive image">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                      <img src="img/cake.png" class="img-responsive img-rounded" alt="Responsive image">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                      <img src="img/circus.png" class="img-responsive img-rounded" alt="Responsive image">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                      <img src="img/game.png" class="img-responsive img-rounded" alt="Responsive image">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                      <img src="img/safe.png" class="img-responsive img-rounded" alt="Responsive image">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                      <img src="img/submarine.png" class="img-responsive img-rounded" alt="Responsive image">
+                    </div>
                 </div>
 
             </div>
@@ -69,17 +107,33 @@
         <!-- Fine sezione portfolio -->
 
         <!-- Inizio sezione about -->
-        <section id="about">
+        <section id="about" class="ms_text_white">
 
             <div class="container">
 
                 <div class="row">
+                  <div class="col-xs-12 text-center">
+
                     <h2>About</h2>
+                    <div class="ms_star_for_blue">
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                  </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6"></div>
-                    <div class="col-md-6"></div>
+                    <div class="col-xs-12 col-sm-6">
+                      <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 text-center button_about">
+
+                  <button type="button" class="btn btn-default btn_blue_download"><i class="fas fa-download"></i> Download</button>
+
                 </div>
 
             </div>
@@ -93,11 +147,27 @@
             <div class="container">
 
                 <div class="row">
-                    <h2>Contact Me</h2>
+                  <div class="col-xs-12 text-center">
+
+                    <h2>Contact me</h2>
+                    <div class="ms_star_for_white">
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                  </div>
                 </div>
 
                 <div class="row">
                     <div class="col-xs-12">
+                      <div class="form_elements">
+                        <p>Name</p>
+                        <p>Email Address</p>
+                        <p>Phone Number</p>
+                        <p class="last_p_form">Message</p>
+                      </div>
+                      <div class="button_contact">
+                        <button type="button" class="btn btn-default btn_send">Send</button>
+                      </div>
                     </div>
                 </div>
 
@@ -110,37 +180,48 @@
     <!-- Fine main -->
 
     <!-- Inizio footer -->
-    <footer>
+    <footer class="text-center">
 
-        <!-- Inizio footer nav -->
-        <section id="footer_nav">
+          <!-- Footer Top -->
+          <div id="footer_top">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xs-12 col-sm-4">
+                        <h3>Location</h3>
+                        <p>2215 John Daniel Drive Clark, MO 54243</p>
 
-            <div class="container">
+                      </div>
 
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
-                </div>
+                      <div class="col-xs-12 col-sm-4">
+                        <h3>Around The Web</h3>
+                        <ul>
+                          <li><a href="#"></a><i class="fab fa-facebook-f"></i></li>
+                          <li><a href="#"></a><i class="fab fa-google-plus-g"></i></li>
+                          <li><a href="#"></a><i class="fab fa-twitter"></i></li>
+                          <li><a href="#"></a><i class="fab fa-linkedin"></i></li>
+                        </ul>
 
-            </div>
+                      </div>
 
-        </section>
-        <!-- Fine footer nav -->
+                      <div class="col-xs-12 col-sm-4">
+                        <h3>About Freelancer</h3>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap.</p>
 
-        <!-- Inizio copyright -->
-        <section id="copyright">
+                      </div>
+                  </div>
+              </div>
+          </div>
 
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-xs-12"></div>
-                </div>
-
-            </div>
-
-        </section>
-        <!-- Fine copyright -->
+          <!-- Copyright -->
+          <div id="copyright">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xs-12">
+                          <p>Copyright <i class="far fa-copyright"></i> Michael Alesiano</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
 
     </footer>
     <!-- Fine footer -->
